@@ -1,28 +1,44 @@
-# Proj_4
-
-# Proj_4
+# Project: Predicting Housing Prices in Ames, Iowa
 
 https://docs.google.com/presentation/d/1e0trx1GU39FPHoadekBtJp58MgRviSVP7eGCNYKBKxg/edit#slide=id.g285a892c57e_0_405
 Link to the slides are above here
 
 Data Source: https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data
 
-In this project we will show you:
-Accurate predictions of housing prices
-Most important features related to housing price
-Both surprising, and obvious
+Overview
+This project aims to provide accurate predictions of housing prices in Ames, Iowa, while also identifying the most important features influencing these prices. We conducted an exploratory analysis, primarily focused on correlations, followed by data preprocessing and modeling using the Random Forest algorithm.
 
-Methodology:
-Exploratory analysis, mostly focused on correlations
-Pre-processing
-Random Forest 
+Methodology
+Our methodology consisted of the following steps:
+
+Exploratory Analysis: We began by exploring the dataset, with a primary focus on identifying correlations between various features and housing prices.
+
+Data Preprocessing: To prepare the data for modeling, we conducted preprocessing steps, including feature removal for those with excessive null values and encoding categorical variables as dummy variables to standardize the data.
+
+Modeling: We employed the Random Forest algorithm for predictive modeling.
 
 Preprocessing: Some preprocessing steps we did were remove certain features that had too many null values in the random forest model as well as creating dummies for categorical values to standardize the data with.
 
-Findings: We were able to discern that features associated with the size of the home such as GrLivArea: Above grade (ground) living area square feet are highly correlative to home sale price and the location of the home were bigger predictors of home sale price.
-Since this is a continuous variable we are predicting linear regression and Random Forest were the best models to use. We were able to get the MAE: Mean Absolute Error to a low value in terms of the home sale price. This means it is quite easy to predict home sale prices in Ames, Iowa with our model. Removing features from the model and messing with the random states hyperparameters allowed us to get this low value. 
+Key Findings
+Our analysis revealed several key findings:
 
-Our Random Forest Model with the low MAE is the best indicator of which features are more associated with home sale price. Interesting findings in this model was that the second and third top features are associated with location (NoRidge Neighborhood is the most associated with higher priced homes as well as the corner street lots). The top feature was the living area size (GrLivArea). Other notable features were the building material such as the gable rooftop style, the exterior material of the home (Imitation Stucco), and the material of the rooftop (Standard (Composite) Shingle) should be considered when purchasing/investing into Ames,Iowa.
+Home Size Matters: Features related to the size of the home, such as "GrLivArea" (above-grade living area square footage), displayed strong positive correlations with home sale prices.
+
+Location Significance: The location of the home emerged as a significant predictor of home sale prices. Neighborhoods like "NoRidge" and properties located on corner lots were associated with higher-priced homes.
+
+Model Performance: Linear regression and Random Forest models provided the best predictions for continuous target variables. Our Random Forest model achieved a low Mean Absolute Error (MAE) for home sale prices, indicating the model's effectiveness in predicting prices.
+
+Conclusion
+The Random Forest model with its low MAE serves as an excellent indicator of which features are most closely associated with home sale prices in Ames, Iowa.
+
+Notable Features
+GrLivArea: Above-grade living area square footage.
+Location: Neighborhoods such as "NoRidge" and properties on corner lots.
+Building Material: Features like the gable rooftop style and the use of imitation stucco and standard composite shingle roofing material.
+Implications
+These findings suggest that factors related to both the size and location of a home significantly influence its sale price in Ames, Iowa. Investors and homebuyers in the area should consider these factors when making decisions.
+
+
 
 
 
