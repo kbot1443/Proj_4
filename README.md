@@ -4,6 +4,7 @@
 
 https://docs.google.com/presentation/d/1e0trx1GU39FPHoadekBtJp58MgRviSVP7eGCNYKBKxg/edit#slide=id.g285a892c57e_0_405
 Link to the slides are above here
+Data Source: https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques
 
 In this project we will show you:
 Accurate predictions of housing prices
@@ -15,8 +16,12 @@ Exploratory analysis, mostly focused on correlations
 Pre-processing
 Random Forest 
 
+Preprocessing: Some preprocessing steps we did were remove certain features that had too many null values in the random forest model as well as creating dummies for categorical values to standardize the data with.
 
+Findings: We were able to discern that features associated with the size of the home such as GrLivArea: Above grade (ground) living area square feet are highly correlative to home sale price and the location of the home were bigger predictors of home sale price.
+Since this is a continuous variable we are predicting linear regression and Random Forest were the best models to use. We were able to get the MAE: Mean Absolute Error to a low value in terms of the home sale price. This means it is quite easy to predict home sale prices in Ames, Iowa with our model. Removing features from the model and messing with the random states hyperparameters allowed us to get this low value. 
 
+Our Random Forest Model with the low MAE is the best indicator of which features are more associated with home sale price. Interesting findings in this model was that the second and third top features are associated with location (NoRidge Neighborhood is the most associated with higher priced homes as well as the corner street lots). The top feature was the living area size (GrLivArea). Other notable features were the building material such as the gable rooftop style, the exterior material of the home (Imitation Stucco), and the material of the rooftop (Standard (Composite) Shingle) should be considered when purchasing/investing into Ames,Iowa.
 
 
 
