@@ -4,7 +4,8 @@
 
 https://docs.google.com/presentation/d/1e0trx1GU39FPHoadekBtJp58MgRviSVP7eGCNYKBKxg/edit#slide=id.g285a892c57e_0_405
 Link to the slides are above here
-Data Source: https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques
+
+Data Source: https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data
 
 In this project we will show you:
 Accurate predictions of housing prices
